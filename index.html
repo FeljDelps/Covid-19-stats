@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19 API Hack Capstone</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css'>
+    <link rel='stylesheet', type='text/css' href='main.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;700&family=Quattrocento:wght@400;700&display=swap" rel="stylesheet" href='main.css'>
+</head>
+<body>
+    <header>
+        <iframe src="https://ourworldindata.org/grapher/total-cases-covid-19?tab=map&region=NorthAmerica" class='map hidden'></iframe>
+    </header>
+    <main>
+        <section id='landing-page'>
+            <h1 class='headline'>COVID-19 API HACK CAPSTONE LANDING PAGE</h1>
+            <p class='body-text landing-text'>This is my API Hack Capstone project:  An app that displays data pulled from Covid-19 API's. </p>
+            <input type='submit' value='Enter here' class='button landing-button'>
+        </section>
+        <section id='main-section' class='hidden'>
+            <div class='national-info'>
+                <h1 class='headline national-headline'>US STATES COVID-19 STATISTICS</h1>
+                <ul id='nationwide-stats'></ul>
+            </div>
+            <div class='state-info'>
+                <form id='state-search'> 
+                    <label for='search-by-state' class='instructions-text'>Search total cases by state.  Please enter the state's abbreviated name</label>
+                    <input name='search-by-state' id='state-name' required>
+                    <input type='submit' class='button state-submit-button'>
+                </form>
+            </div>
+        </section>
+        <section id='results-section' class='hidden'>
+            <h2 id='results-list-heading' class='state-headline'></h2>
+            <ul id='results-list'></ul>
+        </section>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src='index.js'></script>
+</body>
+</html>

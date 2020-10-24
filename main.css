@@ -1,0 +1,291 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background-color: #00263C;    
+}
+
+.hidden {
+    display:none  
+}
+
+
+.headline {
+    font-family: 'Oswald';
+    font-size: 28px;
+    color:#E8D5B5;
+}
+
+.body-text {
+    font-family: 'Quattrocento';
+    color: #E8D5B5;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+#landing-page {
+    margin-top: 50%;
+    padding-left: 30px;
+    padding-right: 30px;    
+}
+
+.landing-text{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.button{
+    padding:10px;
+    border-radius: 5px;
+    background-color: #787586;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+    font-family: 'Quattrocento';
+    font-size: 16px;
+}
+
+#main-section{
+    color: #E8D5B5;   
+}
+
+
+.map {
+    width: 100%; 
+    height: 350px; 
+    border: 0px none;
+    padding: 0px;
+    background-color: white;
+}
+
+.national-info{
+    padding-top: 20px;
+}
+
+
+#nationwide-stats{
+    display:flex;
+    justify-content: space-evenly;
+    padding-top: 25px;
+}
+
+.label{
+    font-family: "Quattrocento";
+    color: #7FB3C8;
+    padding: 15px;    
+}
+
+.stats-text{
+    font-family: "Oswald";
+    display: block;
+    font-size: 20px;
+    font-weight: bolder;
+    padding-top: 10px;
+    letter-spacing: 2px;
+    color:#D4452F;
+
+}
+
+.state-info{
+    margin-top: 10px;
+    padding-left: 30px;
+    padding-right:30px;
+}
+
+
+#state-name {
+    margin-top: 10px;
+}
+
+.instructions-text {
+    font-family: "Quattrocento";
+    color: whitesmoke;
+    font-size:16px;
+    line-height: 27px;
+}
+
+#results-list{
+    display:flex;
+    justify-content: space-evenly;
+    padding-left:30px;
+    padding-right: 30px;
+}
+
+.state-headline{
+    font-family: "Oswald";
+    font-size: 23px;
+    color: #E8D5B5;
+}
+
+#results-section {
+    padding-top: 35px;
+}
+
+@media screen and (max-width:540px){
+/* media queries for cel phone */
+    .map{
+        display:none;
+    }
+
+    #main-section{
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    #nationwide-stats{
+        display:flex;
+        flex-direction: column;
+    }
+
+    #state-name{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+   .state-submit-button{
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+       padding-bottom: 5px;
+       margin-top: 15px;
+       margin-bottom: 10px;
+   }
+
+   .state-headline{
+       padding-bottom: 2px;
+   }
+
+   #results-list{
+       padding-bottom: 10px;
+   }
+
+
+}
+
+@media screen and (min-width:541px){
+/* media queries for tablet */   
+    
+    
+    .map {
+        width: 100%; 
+        height: 300px; 
+        border: 0px none;
+        padding: 0px;
+        background-color: white;
+    }
+    
+    .headline {
+        font-size: 35px;
+    }
+   
+    .landing-text{
+        font-size: 25px;
+        line-height: 35px;
+        padding-top: 25px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+    .landing-button{
+        font-size:25px;
+    }
+
+    #nationwide-stats {
+        padding-top: 30px;
+    }
+
+    .label {
+        font-size:23px;
+    }
+    
+    .stats-text{
+        font-size:38px;
+    }
+    
+    .instructions-text {
+        margin-top: 15px;
+        font-size:23px;     
+   }
+
+   #state-name{
+       padding: 4px 23px;
+       margin-bottom: 15px;
+   }
+
+   .state-submit-button{
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+       font-size: 22px;
+   }
+
+   #results-list-heading{
+       font-size: 35px;
+   }
+
+   
+@media screen and (min-width:1025px){
+/* media queries for desktops */
+    #landing-page{
+        margin-top: 300px;
+    }
+
+    .headline {
+        font-size: 40px;
+    }
+
+    .body-text{
+        font-size:24px;
+    }
+
+    .landing-text{
+        margin-top: 15px;
+    }
+
+    .landing-button{
+        margin-top: 25px;
+    }
+
+    .label{
+        font-size:25px;
+    }
+
+    .stats-text{
+        font-size: 40px;
+    }
+
+    #state-search{
+        padding-top: 30px;
+    }
+
+    .instructions-text{
+        font-size: 25px;
+    }
+
+    #state-name{
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 2.5px 25px;
+    }
+
+    .state-submit-button {
+        margin-top: 15px;
+    }
+
+    .state-headline{
+        font-size: 40px;
+    }
+
+    #results-section{
+        padding-top: 55px;
+    }
+
+    #results-list{
+        padding-top:40px;
+    }
+}
+
+}
