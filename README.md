@@ -4,7 +4,7 @@
 
 #### Link to live app
 
-https://feljdelps.github.io/Covid-19-Info/
+https://feljdelps.github.io/Covid-19-stats/
 
 
 
